@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "private": true,
   "description": "Interactive Tilaverse corporate website prototype",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "python3 -m http.server 4173 --bind 0.0.0.0",
-    "start": "python3 -m http.server 4173 --bind 0.0.0.0"
+    "start": "python3 -m http.server 4173 --bind 0.0.0.0",
+    "build": "node scripts/build.mjs"
   }
 }
